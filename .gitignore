@@ -1,0 +1,32 @@
+# Build output and local tool caches
+**/bin/
+**/obj/
+.build-home/
+.packages/
+.test-output/
+artifacts/
+dist/
+PackPaste.Setup/payload.zip
+
+# IDE and local user settings
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+*.userosscache
+
+# Local credentials, certificates and logs
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.snk
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+  <OutputType>WinExe</OutputType><TargetFramework>net9.0-windows</TargetFramework><UseWindowsForms>true</UseWindowsForms>
+  <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><ApplicationManifest>app.manifest</ApplicationManifest><Version>1.0.1</Version>
+ </PropertyGroup>
+ <ItemGroup><EmbeddedResource Include="payload.zip" LogicalName="payload.zip" Condition="Exists('payload.zip')"/></ItemGroup>
+</Project>
