@@ -1,6 +1,6 @@
 # 上传 GitHub
 
-此目录是独立的 Git 仓库，初始分支为 `codex/github-ready`。尚未创建提交，也没有配置远程地址。
+此目录是独立的 Git 仓库，初始分支为 `codex/github-ready`。以下步骤用于首次发布；已有提交或 `origin` 时无需重复创建。
 
 ## 发布前
 
@@ -19,11 +19,11 @@ git status --short
 git add .
 git diff --cached --stat
 git commit -m "Initial source release v1.0.1"
-git remote add origin https://github.com/YOUR_ACCOUNT/PackPaste.git
+git remote add origin https://github.com/RiYueXi/PackPaste.git
 git push -u origin HEAD:main
 ```
 
-将 `YOUR_ACCOUNT` 替换为你的 GitHub 用户名。最后一条命令把当前本地分支推送为 GitHub 的 `main`。Git 提交若提示缺少身份信息，请填写你自己的姓名和邮箱；可以使用 GitHub 提供的隐私邮箱。
+上面的远程地址指向 `RiYueXi/PackPaste`；Fork 后请换成自己的仓库地址。最后一条命令把当前本地分支推送为 GitHub 的 `main`。Git 提交若提示缺少身份信息，请填写你自己的姓名和邮箱；可以使用 GitHub 提供的隐私邮箱。
 
 也可在 GitHub Desktop 中选择“添加已有本地仓库”，指向此目录后提交并发布。通过网页上传时只上传源码文件，不上传 `.git` 目录。
 
