@@ -1,6 +1,8 @@
 # PackPaste · 打包复制 / 解包粘贴
 
 Windows 11 x64 的文件右键工具，使用 C#、.NET 9 和 Windows Forms。生成 tar.gz 文件包，支持多选文件及文件夹、中文路径、空目录、进度、取消和同名冲突处理。
+- 加快小文件的复制速度
+- 避开复制限制
 
 ## 1.0.1 修复
 
@@ -17,6 +19,7 @@ Windows 11 x64 的文件右键工具，使用 C#、.NET 9 和 Windows Forms。�
 5. 成功后清理两端临时文件包；剪贴板仍指向本次文件包时清除该引用。本次包不能再次粘贴。
 
 需要预先安装 **.NET 9 Desktop Runtime x64**（`Microsoft.WindowsDesktop.App 9.x`）；安装包不携带或自动下载运行环境。仅有 ASP.NET Core Runtime 或普通 .NET Runtime 不足以运行界面。可用 `dotnet --list-runtimes` 检查。
+https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-9.0.20-windows-x64-installer
 
 安装器是约 270 KB 的单文件 EXE，未做商业代码签名。安装器请求管理员权限，实际复制粘贴程序以当前用户普通权限运行。用户不能访问的目录会显示错误。
 
